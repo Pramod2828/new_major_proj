@@ -1,0 +1,97 @@
+{
+  "dataset_stats": {
+    "fox": {
+      "raw_records": 200097,
+      "processed_records": 105245,
+      "exact_duplicates_removed": 94808,
+      "conflicting_groups": 22,
+      "conflicting_records_removed": 44,
+      "train_count": 84196,
+      "val_count": 21049
+    },
+    "russellmitchell": {
+      "raw_records": 114596,
+      "processed_records": 60296,
+      "exact_duplicates_removed": 54270,
+      "conflicting_groups": 15,
+      "conflicting_records_removed": 30,
+      "train_count": 48236,
+      "val_count": 12060
+    },
+    "santos": {
+      "raw_records": 266805,
+      "processed_records": 147768,
+      "exact_duplicates_removed": 119001,
+      "conflicting_groups": 18,
+      "conflicting_records_removed": 36,
+      "train_count": 118214,
+      "val_count": 29554
+    }
+  },
+  "models": [
+    {
+      "model_id": "Unclassified / System",
+      "algorithm": "none",
+      "dataset_id": null,
+      "active": false,
+      "artifact_path": ""
+    },
+    {
+      "model_id": "Random Forest Classifier",
+      "algorithm": "random_forest",
+      "dataset_id": "ait_fox_random_forest_v2",
+      "active": false,
+      "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\ait_fox_random_forest_20261015_042726.joblib"
+    },
+    {
+      "model_id": "XGBoost Classifier",
+      "algorithm": "xgboost",
+      "dataset_id": "ait_fox_xgboost_v2",
+      "active": false,
+      "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\ait_fox_xgboost_20261015_042847.joblib"
+    },
+    {
+      "model_id": "Random Forest Classifier",
+      "algorithm": "random_forest",
+      "dataset_id": "ait_russellmitchell_random_forest_v2",
+      "active": false,
+      "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\ait_russellmitchell_random_forest_20261015_042932.joblib"
+    },
+    {
+      "model_id": "XGBoost Classifier",
+      "algorithm": "xgboost",
+      "dataset_id": "ait_russellmitchell_xgboost_v2",
+      "active": false,
+      "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\ait_russellmitchell_xgboost_20261015_043019.joblib"
+    },
+    {
+      "model_id": "Random Forest Classifier",
+      "algorithm": "random_forest",
+      "dataset_id": "ait_santos_random_forest_v2",
+      "active": false,
+      "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\ait_santos_random_forest_20261015_043045.joblib"
+    },
+    {
+      "model_id": "XGBoost Classifier",
+      "algorithm": "xgboost",
+      "dataset_id": "ait_santos_xgboost_v2",
+      "active": false,
+      "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\ait_santos_xgboost_20261015_043148.joblib"
+    },
+    {
+      "model_id": "Random Forest Classifier",
+      "algorithm": "random_forest",
+      "dataset_id": "mock_ds",
+      "active": true,
+      "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\reg_test_rf.joblib"
+    }
+  ],
+  "active_model": {
+    "model_id": "Random Forest Classifier",
+    "algorithm": "random_forest",
+    "dataset_id": "mock_ds",
+    "active": true,
+    "artifact_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\new major project\\backend\\artifacts\\reg_test_rf.joblib"
+  },
+  "reg_test_rf_meta": null
+}
