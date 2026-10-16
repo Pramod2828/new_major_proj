@@ -1,0 +1,640 @@
+{
+  "datasets": {
+    "fox": {
+      "pre_duplicate_records": 200097,
+      "post_duplicate_records": 105245,
+      "exact_duplicates_removed": 94808,
+      "conflicting_groups": 22,
+      "conflicting_records_removed": 44,
+      "train_records": 84196,
+      "val_records": 21049
+    },
+    "russellmitchell": {
+      "pre_duplicate_records": 114596,
+      "post_duplicate_records": 60296,
+      "exact_duplicates_removed": 54270,
+      "conflicting_groups": 15,
+      "conflicting_records_removed": 30,
+      "train_records": 48236,
+      "val_records": 12060
+    },
+    "santos": {
+      "pre_duplicate_records": 266805,
+      "post_duplicate_records": 147768,
+      "exact_duplicates_removed": 119001,
+      "conflicting_groups": 18,
+      "conflicting_records_removed": 36,
+      "train_records": 118214,
+      "val_records": 29554
+    }
+  },
+  "models": [
+    {
+      "model_id": "reg_test_rf",
+      "algorithm": "random_forest",
+      "dataset_id": "mock_ds",
+      "dataset_name": "Mock Dataset",
+      "is_active": true,
+      "artifact_path": null,
+      "metrics": {
+        "accuracy": 0.95,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "model_id": "ait_santos_xgboost_20261015_043148",
+      "algorithm": "xgboost",
+      "dataset_id": "ait_santos_xgboost_v2",
+      "dataset_name": "AIT-LDS SANTOS (v2)",
+      "is_active": false,
+      "artifact_path": null,
+      "metrics": {
+        "val_on_own_split": {
+          "precision": 0.611,
+          "recall": 0.9793,
+          "f1_score": 0.7525,
+          "false_positive_rate": 0.0445,
+          "true_negatives": 125878,
+          "false_positives": 5866,
+          "false_negatives": 195,
+          "true_positives": 9213,
+          "confusion_matrix": [
+            [
+              125878,
+              5866
+            ],
+            [
+              195,
+              9213
+            ]
+          ],
+          "classification_report": {
+            "Normal": {
+              "precision": 0.9984532770696343,
+              "recall": 0.9554742530969152,
+              "f1-score": 0.9764910770042317,
+              "support": 131744.0
+            },
+            "Anomaly": {
+              "precision": 0.6109821606207309,
+              "recall": 0.9792729591836735,
+              "f1-score": 0.7524809082370237,
+              "support": 9408.0
+            },
+            "accuracy": 0.9570604738154613,
+            "macro avg": {
+              "precision": 0.8047177188451826,
+              "recall": 0.9673736061402944,
+              "f1-score": 0.8644859926206276,
+              "support": 141152.0
+            },
+            "weighted avg": {
+              "precision": 0.9726277254405303,
+              "recall": 0.9570604738154613,
+              "f1-score": 0.9615604513824773,
+              "support": 141152.0
+            }
+          },
+          "roc_auc": 0.991,
+          "training_duration_seconds": 28.8,
+          "train_samples": 564608,
+          "val_samples": 141152
+        },
+        "training_duration_seconds": 28.8
+      }
+    },
+    {
+      "model_id": "ait_santos_random_forest_20261015_043045",
+      "algorithm": "random_forest",
+      "dataset_id": "ait_santos_random_forest_v2",
+      "dataset_name": "AIT-LDS SANTOS (v2)",
+      "is_active": false,
+      "artifact_path": null,
+      "metrics": {
+        "val_on_own_split": {
+          "precision": 0.5164,
+          "recall": 0.9854,
+          "f1_score": 0.6777,
+          "false_positive_rate": 0.0659,
+          "true_negatives": 123063,
+          "false_positives": 8681,
+          "false_negatives": 137,
+          "true_positives": 9271,
+          "confusion_matrix": [
+            [
+              123063,
+              8681
+            ],
+            [
+              137,
+              9271
+            ]
+          ],
+          "classification_report": {
+            "Normal": {
+              "precision": 0.998887987012987,
+              "recall": 0.9341070561088171,
+              "f1-score": 0.9654120120497051,
+              "support": 131744.0
+            },
+            "Anomaly": {
+              "precision": 0.5164327094474154,
+              "recall": 0.985437925170068,
+              "f1-score": 0.6777046783625731,
+              "support": 9408.0
+            },
+            "accuracy": 0.9375283382452958,
+            "macro avg": {
+              "precision": 0.7576603482302011,
+              "recall": 0.9597724906394425,
+              "f1-score": 0.821558345206139,
+              "support": 141152.0
+            },
+            "weighted avg": {
+              "precision": 0.9667315935411489,
+              "recall": 0.9375283382452958,
+              "f1-score": 0.9462358714684271,
+              "support": 141152.0
+            }
+          },
+          "roc_auc": 0.9905,
+          "training_duration_seconds": 61.3,
+          "train_samples": 564608,
+          "val_samples": 141152
+        },
+        "training_duration_seconds": 61.3
+      }
+    },
+    {
+      "model_id": "ait_russellmitchell_xgboost_20261015_043019",
+      "algorithm": "xgboost",
+      "dataset_id": "ait_russellmitchell_xgboost_v2",
+      "dataset_name": "AIT-LDS RUSSELLMITCHELL (v2)",
+      "is_active": false,
+      "artifact_path": null,
+      "metrics": {
+        "val_on_own_split": {
+          "precision": 0.5011,
+          "recall": 0.974,
+          "f1_score": 0.6617,
+          "false_positive_rate": 0.1113,
+          "true_negatives": 83191,
+          "false_positives": 10423,
+          "false_negatives": 279,
+          "true_positives": 10467,
+          "confusion_matrix": [
+            [
+              83191,
+              10423
+            ],
+            [
+              279,
+              10467
+            ]
+          ],
+          "classification_report": {
+            "Normal": {
+              "precision": 0.9966574817299628,
+              "recall": 0.8886598158395111,
+              "f1-score": 0.9395654039890673,
+              "support": 93614.0
+            },
+            "Anomaly": {
+              "precision": 0.5010531354715174,
+              "recall": 0.974036850921273,
+              "f1-score": 0.6617145024655455,
+              "support": 10746.0
+            },
+            "accuracy": 0.8974511307014181,
+            "macro avg": {
+              "precision": 0.7488553086007401,
+              "recall": 0.931348333380392,
+              "f1-score": 0.8006399532273064,
+              "support": 104360.0
+            },
+            "weighted avg": {
+              "precision": 0.9456248609471604,
+              "recall": 0.8974511307014181,
+              "f1-score": 0.9109549614078891,
+              "support": 104360.0
+            }
+          },
+          "roc_auc": 0.9612,
+          "training_duration_seconds": 20.9,
+          "train_samples": 417437,
+          "val_samples": 104360
+        },
+        "training_duration_seconds": 20.9
+      }
+    },
+    {
+      "model_id": "ait_russellmitchell_random_forest_20261015_042932",
+      "algorithm": "random_forest",
+      "dataset_id": "ait_russellmitchell_random_forest_v2",
+      "dataset_name": "AIT-LDS RUSSELLMITCHELL (v2)",
+      "is_active": false,
+      "artifact_path": null,
+      "metrics": {
+        "val_on_own_split": {
+          "precision": 0.4723,
+          "recall": 0.981,
+          "f1_score": 0.6376,
+          "false_positive_rate": 0.1258,
+          "true_negatives": 81834,
+          "false_positives": 11780,
+          "false_negatives": 204,
+          "true_positives": 10542,
+          "confusion_matrix": [
+            [
+              81834,
+              11780
+            ],
+            [
+              204,
+              10542
+            ]
+          ],
+          "classification_report": {
+            "Normal": {
+              "precision": 0.9975133474731223,
+              "recall": 0.8741641207511697,
+              "f1-score": 0.9317741898754355,
+              "support": 93614.0
+            },
+            "Anomaly": {
+              "precision": 0.47226950990054656,
+              "recall": 0.9810161920714685,
+              "f1-score": 0.6375952582557155,
+              "support": 10746.0
+            },
+            "accuracy": 0.8851667305481027,
+            "macro avg": {
+              "precision": 0.7348914286868344,
+              "recall": 0.9275901564113191,
+              "f1-score": 0.7846847240655754,
+              "support": 104360.0
+            },
+            "weighted avg": {
+              "precision": 0.9434287338418949,
+              "recall": 0.8851667305481027,
+              "f1-score": 0.9014824420871496,
+              "support": 104360.0
+            }
+          },
+          "roc_auc": 0.9599,
+          "training_duration_seconds": 45.3,
+          "train_samples": 417437,
+          "val_samples": 104360
+        },
+        "training_duration_seconds": 45.3
+      }
+    },
+    {
+      "model_id": "ait_fox_xgboost_20261015_042847",
+      "algorithm": "xgboost",
+      "dataset_id": "ait_fox_xgboost_v2",
+      "dataset_name": "AIT-LDS FOX (v2 fixed labels)",
+      "is_active": false,
+      "artifact_path": null,
+      "metrics": {
+        "val_on_fox": {
+          "precision": 0.4879,
+          "recall": 0.9781,
+          "f1_score": 0.651,
+          "false_positive_rate": 0.076,
+          "true_negatives": 111204,
+          "false_positives": 9152,
+          "false_negatives": 195,
+          "true_positives": 8718,
+          "confusion_matrix": [
+            [
+              111204,
+              9152
+            ],
+            [
+              195,
+              8718
+            ]
+          ],
+          "classification_report": {
+            "Normal": {
+              "precision": 0.9982495354536396,
+              "recall": 0.9239589218651334,
+              "f1-score": 0.9596686155638497,
+              "support": 120356.0
+            },
+            "Anomaly": {
+              "precision": 0.48785674314493566,
+              "recall": 0.9781218444968024,
+              "f1-score": 0.651009969010193,
+              "support": 8913.0
+            },
+            "accuracy": 0.9276934145077319,
+            "macro avg": {
+              "precision": 0.7430531392992876,
+              "recall": 0.951040383180968,
+              "f1-score": 0.8053392922870214,
+              "support": 129269.0
+            },
+            "weighted avg": {
+              "precision": 0.9630583375806191,
+              "recall": 0.9276934145077319,
+              "f1-score": 0.9383868348064156,
+              "support": 129269.0
+            }
+          },
+          "roc_auc": 0.979,
+          "training_duration_seconds": 27.7,
+          "train_samples": 517074,
+          "val_samples": 129269
+        },
+        "cross_eval": {
+          "russellmitchell": {
+            "precision": 0.4573,
+            "recall": 0.9866,
+            "f1_score": 0.6249,
+            "false_positive_rate": 0.1344,
+            "true_negatives": 405142,
+            "false_positives": 62923,
+            "false_negatives": 719,
+            "true_positives": 53013,
+            "confusion_matrix": [
+              [
+                405142,
+                62923
+              ],
+              [
+                719,
+                53013
+              ]
+            ],
+            "classification_report": {
+              "Normal": {
+                "precision": 0.9982284575260988,
+                "recall": 0.8655678164357514,
+                "f1-score": 0.9271769005613748,
+                "support": 468065.0
+              },
+              "Anomaly": {
+                "precision": 0.45726090256693347,
+                "recall": 0.9866187746594208,
+                "f1-score": 0.6249027512553929,
+                "support": 53732.0
+              },
+              "accuracy": 0.8780330281699588,
+              "macro avg": {
+                "precision": 0.7277446800465162,
+                "recall": 0.9260932955475861,
+                "f1-score": 0.7760398259083838,
+                "support": 521797.0
+              },
+              "weighted avg": {
+                "precision": 0.9425223713219507,
+                "recall": 0.8780330281699588,
+                "f1-score": 0.8960502467275869,
+                "support": 521797.0
+              }
+            },
+            "roc_auc": 0.9327,
+            "eval_dataset": "russellmitchell",
+            "eval_samples": 521797,
+            "eval_anomaly_rate": 10.297
+          },
+          "santos": {
+            "precision": 0.4432,
+            "recall": 0.8189,
+            "f1_score": 0.5751,
+            "false_positive_rate": 0.0735,
+            "true_negatives": 610316,
+            "false_positives": 48404,
+            "false_negatives": 8517,
+            "true_positives": 38523,
+            "confusion_matrix": [
+              [
+                610316,
+                48404
+              ],
+              [
+                8517,
+                38523
+              ]
+            ],
+            "classification_report": {
+              "Normal": {
+                "precision": 0.9862369977037424,
+                "recall": 0.9265180957007529,
+                "f1-score": 0.9554452926806167,
+                "support": 658720.0
+              },
+              "Anomaly": {
+                "precision": 0.44316495450205345,
+                "recall": 0.8189413265306122,
+                "f1-score": 0.575111781259564,
+                "support": 47040.0
+              },
+              "accuracy": 0.9193479369757425,
+              "macro avg": {
+                "precision": 0.714700976102898,
+                "recall": 0.8727297111156826,
+                "f1-score": 0.7652785369700903,
+                "support": 705760.0
+              },
+              "weighted avg": {
+                "precision": 0.9500404026683089,
+                "recall": 0.9193479369757425,
+                "f1-score": 0.9300954735108616,
+                "support": 705760.0
+              }
+            },
+            "roc_auc": 0.8285,
+            "eval_dataset": "santos",
+            "eval_samples": 705760,
+            "eval_anomaly_rate": 6.665
+          }
+        },
+        "training_duration_seconds": 27.7
+      }
+    },
+    {
+      "model_id": "ait_fox_random_forest_20261015_042726",
+      "algorithm": "random_forest",
+      "dataset_id": "ait_fox_random_forest_v2",
+      "dataset_name": "AIT-LDS FOX (v2 fixed labels)",
+      "is_active": false,
+      "artifact_path": null,
+      "metrics": {
+        "val_on_fox": {
+          "precision": 0.4499,
+          "recall": 0.9854,
+          "f1_score": 0.6178,
+          "false_positive_rate": 0.0892,
+          "true_negatives": 109619,
+          "false_positives": 10737,
+          "false_negatives": 130,
+          "true_positives": 8783,
+          "confusion_matrix": [
+            [
+              109619,
+              10737
+            ],
+            [
+              130,
+              8783
+            ]
+          ],
+          "classification_report": {
+            "Normal": {
+              "precision": 0.9988154789565281,
+              "recall": 0.9107896573498621,
+              "f1-score": 0.9527737337302535,
+              "support": 120356.0
+            },
+            "Anomaly": {
+              "precision": 0.44994877049180326,
+              "recall": 0.9854145629978683,
+              "f1-score": 0.6178032567790948,
+              "support": 8913.0
+            },
+            "accuracy": 0.9159349882802528,
+            "macro avg": {
+              "precision": 0.7243821247241657,
+              "recall": 0.9481021101738651,
+              "f1-score": 0.7852884952546741,
+              "support": 129269.0
+            },
+            "weighted avg": {
+              "precision": 0.9609715335980423,
+              "recall": 0.9159349882802528,
+              "f1-score": 0.9296777721225542,
+              "support": 129269.0
+            }
+          },
+          "roc_auc": 0.9776,
+          "training_duration_seconds": 58.2,
+          "train_samples": 517074,
+          "val_samples": 129269
+        },
+        "cross_eval": {
+          "russellmitchell": {
+            "precision": 0.4694,
+            "recall": 0.9828,
+            "f1_score": 0.6353,
+            "false_positive_rate": 0.1275,
+            "true_negatives": 408367,
+            "false_positives": 59698,
+            "false_negatives": 923,
+            "true_positives": 52809,
+            "confusion_matrix": [
+              [
+                408367,
+                59698
+              ],
+              [
+                923,
+                52809
+              ]
+            ],
+            "classification_report": {
+              "Normal": {
+                "precision": 0.9977448752718122,
+                "recall": 0.8724578851227928,
+                "f1-score": 0.9309048218793988,
+                "support": 468065.0
+              },
+              "Anomaly": {
+                "precision": 0.4693841272098625,
+                "recall": 0.9828221543958907,
+                "f1-score": 0.635338278021403,
+                "support": 53732.0
+              },
+              "accuracy": 0.8838226360059563,
+              "macro avg": {
+                "precision": 0.7335645012408374,
+                "recall": 0.9276400197593417,
+                "f1-score": 0.783121549950401,
+                "support": 521797.0
+              },
+              "weighted avg": {
+                "precision": 0.9433369738947159,
+                "recall": 0.8838226360059563,
+                "f1-score": 0.9004688831243316,
+                "support": 521797.0
+              }
+            },
+            "roc_auc": 0.9354,
+            "eval_dataset": "russellmitchell",
+            "eval_samples": 521797,
+            "eval_anomaly_rate": 10.297
+          },
+          "santos": {
+            "precision": 0.456,
+            "recall": 0.8176,
+            "f1_score": 0.5855,
+            "false_positive_rate": 0.0697,
+            "true_negatives": 612835,
+            "false_positives": 45885,
+            "false_negatives": 8579,
+            "true_positives": 38461,
+            "confusion_matrix": [
+              [
+                612835,
+                45885
+              ],
+              [
+                8579,
+                38461
+              ]
+            ],
+            "classification_report": {
+              "Normal": {
+                "precision": 0.9861943889259013,
+                "recall": 0.9303421787709497,
+                "f1-score": 0.9574544539868483,
+                "support": 658720.0
+              },
+              "Anomaly": {
+                "precision": 0.4559907998008204,
+                "recall": 0.8176232993197279,
+                "f1-score": 0.5854657269419877,
+                "support": 47040.0
+              },
+              "accuracy": 0.9228292904103378,
+              "macro avg": {
+                "precision": 0.7210925943633608,
+                "recall": 0.8739827390453387,
+                "f1-score": 0.771460090464418,
+                "support": 705760.0
+              },
+              "weighted avg": {
+                "precision": 0.9508554963385574,
+                "recall": 0.9228292904103378,
+                "f1-score": 0.9326608276546812,
+                "support": 705760.0
+              }
+            },
+            "roc_auc": 0.9165,
+            "eval_dataset": "santos",
+            "eval_samples": 705760,
+            "eval_anomaly_rate": 6.665
+          }
+        },
+        "training_duration_seconds": 58.2
+      }
+    },
+    {
+      "model_id": "unclassified",
+      "algorithm": "none",
+      "dataset_id": null,
+      "dataset_name": null,
+      "is_active": false,
+      "artifact_path": null,
+      "metrics": {}
+    }
+  ],
+  "summary": {
+    "total_unique_project_records": 313309,
+    "total_records_used_for_training": 0,
+    "total_validation_records_across_runs": 0,
+    "mock_test_records": "NOT VERIFIED"
+  }
+}
